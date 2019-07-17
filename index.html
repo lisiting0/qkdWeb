@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html>
+
+	<head>
+		<meta charset="utf-8" />
+		<meta name="viewport" content="width=device-width,initial-scale=1.0,maximum-scale=1.0,minimum-scale=1.0,user-scalable=no">
+		<title>乾坤岛</title>
+		<link rel="stylesheet" type="text/css" href="css/common.css" />
+		<script src="js/jquery.min.js" type="text/javascript" charset="utf-8"></script>
+		<script type="text/javascript">
+			$(function() {
+				$(".menu-ul li").click(function() {
+					$(".menu-ul li.cur").removeClass("cur");
+					$(this).addClass("cur");
+					var thisUrl = $(this).attr("data-url");
+					location.href = "#" + thisUrl;
+				})
+				window.onload = function() {
+					document.body.style.zoom = "normal"; //避免zoom尺寸叠加
+					let scale = document.body.clientWidth / 1904;
+					document.body.style.zoom = scale;
+				}
+			})
+		</script>
+	</head>
+
+	<body>
+		<div class="qkd-container">
+			<div id="index" class="qkd-index">
+				<div class="center">
+					<div class="header">
+						<div class="left-con">
+							<div class="logo-div"><img src="img/logo.png" /></div>
+							<span class="line"></span>
+							<div class="logo-div"><img src="img/logo2.png" /></div>
+						</div>
+						<div class="right-con">
+							<ul class="menu-ul">
+								<li class="cur" data-url="index">
+									<a href="javascript:void(0);">首页</a>
+								</li>
+								<li data-url="about">
+									<a href="javascript:void(0);">关于乾坤岛</a>
+								</li>
+								<li data-url="intro">
+									<a href="javascript:void(0);">产品介绍</a>
+								</li>
+							</ul>
+						</div>
+					</div>
+					<div class="index-con">
+						<div class="index-left">
+							<img src="img/user-list.png" />
+						</div>
+						<div class="index-right">
+							<div class="qkd-logo"><img src="img/qkd-logo.png" /></div>
+							<div class="qkd-tip"><img src="img/qkd-tip.png" /></div>
+							<div class="qrcode">
+								<div class="phone-type">
+									<div class="iphone">
+										<img src="img/iPhone.png" alt="" />
+									</div>
+									<div class="android">
+										<img src="img/android.png" alt="" />
+									</div>
+								</div>
+								<div class="qrcode-img"><img src="img/qrcode.png" alt="" /></div>
+							</div> 
+							<div class="user-tip"><img src="img/download-tip.png"/></div>
+						</div>
+					</div>
+				</div>
+			</div>
+			<div id="about">
+				<div class="center">
+					<div class="title"><img src="img/about-title.png" /></div>
+					<div class="sub-title"><img src="img/about-subtitle.png" /></div>
+					<div class="about-con">
+						<div class="width50">
+							<img src="img/about-qkd.png" />
+						</div>
+						<div class="width50">
+							<img src="img/qkd-desc.png" />
+						</div>
+					</div>
+				</div>
+			</div>
+			<div id="intro">
+				<div class="center">
+					<div class="title"><img src="img/module-title.png" /></div>
+					<div class="sub-title"><img src="img/module-subtitle.png" /></div>
+					<div class="intro-con">
+						<div class="panel">
+							<p class="top-line"></p>
+							<div class="panel-img first-img"><img src="img/module1-icon.png" /></div>
+							<div class="panel-img two-img"><img src="img/module1-title.png" /></div>
+							<div class="panel-img three-img"><img src="img/module1-subtitle.png" /></div>
+							<div class="panel-bottom">
+								<div class="module-table">
+									<div class="module-text">
+										打破传统相亲和相亲会的弊端，对相亲活动事前相互了解、事中交流互动、事后约会跟踪进行支撑。
+									</div>
+								</div>
+								<div class="panel-img four-img"><img src="img/module1.png" /></div>
+							</div>
+						</div>
+						<div class="panel">
+							<p class="top-line module2-line"></p>
+							<div class="panel-img first-img" style="padding: 25px 0"><img src="img/module2-icon.png" /></div>
+							<div class="panel-img two-img"><img src="img/module2-title.png" /></div>
+							<div class="panel-img three-img"><img src="img/module2-subtitle.png" /></div>
+							<div class="panel-bottom">
+								<div class="module-table">
+									<div class="module-text">
+										平台通过设置一系列机制，解决陌生异性交友约会时间成本高、机会成本高、诈骗频发、人身安全风险大等问题，对青年男女确立约会、约会破冰、恋爱过程、定亲结婚进行全程支撑。
+									</div>
+								</div>
+								<div class="panel-img four-img"><img src="img/module2.png" /></div>
+							</div>
+						</div>
+						<div class="panel">
+							<p class="top-line module3-line"></p>
+							<div class="panel-img first-img"><img src="img/module3-icon.png" /></div>
+							<div class="panel-img two-img"><img src="img/module3-title.png" /></div>
+							<div class="panel-img three-img"><img src="img/module3-subtitle.png" /></div>
+							<div class="panel-bottom">
+								<div class="module-table">
+									<div class="module-text">
+										根据两性发展的客观规律和感情推进的时间轴，为您在交友过程中准备和推荐爱情法宝，点缀您的爱情历程。
+									</div>
+								</div>
+								<div class="panel-img four-img"><img src="img/module3.png" /></div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+			<div id="sp">
+				<div class="center">
+					<video controls poster="./img/poster.jpg" controls="controls" width="100%" height="550" style=" object-fit: fill;">
+						<source src="http://qkd.iceinfo.net/userfiles/qkdIntroduce.mp4" type="video/mp4">
+						<source src="movie.ogg" type="video/ogg"> Your browser does not support the video tag.
+					</video>
+				</div>
+			</div>
+		</div>
+	</body>
+
+</html>

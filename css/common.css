@@ -1,0 +1,284 @@
+@charset "utf-8";
+
+/* CSS Document */
+
+* {
+	font-size: 9pt;
+	border: 0;
+	margin: 0;
+	padding: 0;
+}
+
+html {
+	font-size: 62.5%;
+	zoom: 1;
+}
+
+body {
+	font: normal 100% Arial, sans-serif;
+	font-size: 14px;
+	font-size: 1.4rem;
+	margin: 0 auto;
+}
+
+ul {
+	display: block;
+	margin: 0;
+	padding: 0;
+	list-style: none;
+}
+
+li {
+	display: block;
+	margin: 0;
+	padding: 0;
+	list-style: none;
+}
+
+img {
+	border: 0;
+}
+
+dl,
+dt,
+dd,
+span {
+	margin: 0;
+	padding: 0;
+	display: block;
+}
+
+a,
+a:focus {
+	text-decoration: none;
+	color: #000;
+	outline: none;
+	blr: expression(this.onFocus=this.blur());
+	cursor: pointer;
+}
+
+a:hover {
+	color: #00a4ac;
+	text-decoration: none;
+	cursor: pointer;
+}
+
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
+cite {
+	font-style: normal;
+}
+
+h2 {
+	font-weight: normal;
+}
+
+
+/*img{height: auto; width: auto\9; width:auto;}*/
+
+img {
+	display: inline-block;
+	height: auto;
+	max-width: 100%;
+}
+
+.qkd-index {
+	width: 100%;
+	height: 800px;
+	background-image: url('../img/bg.png');
+	background-repeat: no-repeat;
+	background-size: cover;
+}
+
+.center {
+	width: 60%;
+	margin: 0 auto;
+}
+
+.header {
+	padding: 35px 0;
+	overflow: hidden;
+}
+
+.header .left-con {
+	float: left;
+}
+
+.left-con .line {
+	display: inline-block;
+	width: 1px;
+	height: 56px;
+	background-color: #ffffff;
+	margin: 0 15px;
+}
+
+.right-con {
+	float: right;
+}
+
+.right-con ul {
+	overflow: hidden;
+}
+
+.right-con ul li {
+	height: 45px;
+	float: left;
+	margin: 0 15px;
+}
+
+.right-con ul li a {
+	color: #FFFFFF;
+	font-size: 16px;
+	line-height: 60px;
+}
+
+.right-con ul li.cur {
+	border-bottom: 2px solid #00eaff;
+}
+
+.right-con ul li.cur a {
+	color: #00eaff;
+}
+
+.index-con {
+	overflow: hidden;
+	display: flex;
+	justify-content: space-between;
+}
+
+.index-left,
+.index-right {
+	float: left; 
+}
+
+.index-right {
+	margin: 0 10%;
+}
+
+.qkd-logo {
+	padding: 10px 0 20px;
+}
+
+.qkd-tip {
+	padding: 10px 10px 0;
+}
+
+.qrcode {
+	display: flex;
+	margin: 50px 0 40px;
+	align-items: center;
+}
+
+.qrcode .phone-type img {
+	display: block;
+	margin-bottom: 10px;
+}
+
+.qrcode-img {
+	margin-left: 10px;
+}
+
+.user-tip {
+	font-size: 14px;
+	color: #FFFFFF;
+	padding: 0 10px;
+	line-height: 24px;
+}
+
+#about {
+	padding: 100px 0;
+	text-align: center;
+}
+
+.sub-title {
+	padding: 10px 0;
+}
+
+.about-con {
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	padding: 70px 0;
+}
+
+.about-con .width50 {
+	width: 48%;
+}
+
+
+/*.qkd-logo {
+	width: 122px;
+	height: 122px;
+}*/
+
+#intro {
+	text-align: center;
+}
+
+.intro-con {
+	padding: 70px 0;
+	display: flex;
+	justify-content: space-between;
+}
+
+.panel {
+	width: 30%;
+	box-shadow: 0 0 15px #ddd;
+}
+
+.top-line {
+	width: 40px;
+	border-top: 4px solid #ff4967;
+	margin: 0 auto
+}
+
+.module2-line {
+	border-top: 4px solid #ff4967;
+}
+
+.module3-line {
+	border-top: 4px solid #16bad3;
+}
+
+.panel .panel-img {
+	text-align: center;
+}
+
+.first-img {
+	padding: 35px 0;
+}
+
+.two-img {
+	padding-bottom: 5px;
+}
+
+.three-img {
+	padding: 0 0 10px;
+}
+
+.panel-bottom {
+	padding: 20px;
+}
+
+.module-table {
+	min-height: 150px; 
+	display: table;
+}
+
+.module-text {
+	text-align: left;
+	font-size: 16px;
+	line-height: 28px;
+	display: table-cell;
+	word-wrap: break-word;
+	color: #5d5d5d;
+	font-family: "微软雅黑";
+}
+
+.logo-div {
+	display: inline-block;
+}
+ 
